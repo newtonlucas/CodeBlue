@@ -1,0 +1,49 @@
+/* RESET CSS */
+/* Seletor universal */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* Agrupamento de seletores CSS */
+h1,h2,p{
+    color: #900;
+}
+
+/* Seletor de elemento descendente */
+h2 span{
+    color: #090;
+    font-size: 30px;
+}
+p span{
+    color:#009;
+    font-size: 10px;
+}
+
+/* ID e CLASS */
+/* 
+    class - Atributo HTML que adiciona um identificador reutilizável ou não na tag.
+    ​ID - Atributo HTML que adiciona um identificador ÚNICO na tag.
+
+    Semelhanças enrte ID e CLASS:
+    -São atributos globais.
+    -Os dois serverm para identificar elementos HTML.
+    - Nos dois o valor é uma STRING*.
+
+    Diferenças enrte ID e CLASS:
+    -Quando quero selecionar um elemento específico, eu uso ID. Quando quero selecionar vários, eu uso CLASS.
+    -Um valor de uma ID não pode se repetir na mesma página, já o valor de uma CLASS pode.
+    -Para estilizar um ID eu uso #, para selecionar uma CLASS eu uso., seguida da string.
+    -ID sempre tem um valor, CLASS pode ter vários.
+
+    # jogo da véia para ID
+    ​. para classes
+
+    Uma ID tem a hierarquia do efeito cascata superior a da CLASS.
+
+    *String é um termo generico para identificar elementos.
+    Não pode ter caracteres especiais e é case-sensitive. Não pode começar com números.
+    *DOM - Document Object Module
+*/

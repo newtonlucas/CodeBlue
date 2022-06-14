@@ -1,0 +1,22 @@
+h1{
+    font: bolder 40px/50px 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font: bolder 20px/50px 'Times New Roman', Times, serif;
+ }
+h3{
+    font-weight: normal;
+    text-align: center;
+}
+h4{
+    font: normal 14px/20px 'Times New Roman', Times, serif;
+    text-align: center;
+}
+::marker{
+    color: #ff6700;
+    font: bolder italic 16px/20px 'Times New Roman', Times, serif;
+}
+span{
+    color: #ff6700;
+}

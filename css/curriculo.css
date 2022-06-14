@@ -1,0 +1,16 @@
+h1 {
+    font: normal italic 50px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    font: normal 40px 'Courier New', Courier, monospace;
+}
+
+li{
+    color: #0f0f0f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: initial;
+    font-style: initial;
+    font-variant: normal;
+}

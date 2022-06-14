@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* REVISÃO CONTAINER */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.topo{
+    background: #900;
+}
+
+/* 
+DISPLAY
+Muda o comporttamento padrão daquele tipo de elemento de HTML.
+*/
+
+.d-box2 a{
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+/* Display:inline-block */
+
+.d-box{
+    background: #333;
+}
+.d-box1{
+    width: 200px;
+    height: 100px;
+    background: #090;
+}
+.d-box2{
+    width: 250px;
+    height: 130px;
+    background: #009;
+}
+.d-box1,
+.d-box2{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 
+FLEX
+Permite que os elementos filhos daquele elemento onde o FLEX foi atribuído, fiquem um do lado do outro.
+O Flex por padrão muda o tamanho dos filhos para caber.
+Para amanter o tamanho utilizamos "flex-wrap: wrap;", os itens execedentes serão colocados na linha de baixo.
+*/
+.f-box{
+    background: #999;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    gap: 10px; /* Espaçamento entre filhos */
+}
+.f-box1{
+    width: 230px;
+    height: 150px;
+    background: #990;
+}
+.f-box2{
+    width: 120px;
+    height: 200px;
+    background: #099;
+}
+.box1{order: 7;}
+.box2{order: 10;}
+.box3{order: 1;}
+.box4{order: 2;}
+.box5{order: 8;}
+.box6{order: 5;}
+.box7{order: 3;}
+.box8{order: 9;}
+.box9{order: 4;}
+.box10{order: 6;}
+
+/* 
+GRID
+Mais uma técnica de Tableless, que pode ser usada pasa estruturar o site inteiro, mas geralmente usamos para mosaicos.
+*/
+
+.g-box{
+    background: #ccc;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.g-box1{
+    width: 150px;
+    height: 200px;
+    background: #909;
+}
+.g-box2{
+    width: 300px;
+    height: 150px;
+    background: #900;
+}

@@ -1,0 +1,102 @@
+/* RESET Diego Perly */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+img,
+ul,
+li,
+main,
+article,
+figure,
+footer,
+header,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ul,
+li{list-style:none;}
+strong{font-family:Arial, Helvetica, sans-serif;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+.header{
+    text-align: center;
+}
+
+/* INÍCIO DO MEU CSS */
+/* HEADER já alinhado no reset. */
+
+h2{
+    font: bold 26px Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #000;
+}
+.menu{
+    width: 1100px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.menu li{
+    text-align: center;
+    border: 1px solid #aaa;
+    background: #900;
+    width: 218px;
+    height: 30px;
+    float: left;
+    padding-top: 8px;
+}
+.menu li a{
+    color: #fff;
+}
+.content{
+    width: 1100px;
+    height: 230px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.content div{
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    width: 324px;
+    height: 180px;
+    float: left;
+}
+.content p{
+    padding: 10px;
+}
+.leia{
+    text-align: right;
+    text-decoration: underline;
+}
+.leia a{
+    color: #900;
+}
+.footer{
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+}

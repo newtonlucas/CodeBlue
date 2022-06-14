@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 
+NOVOS SELETORES CSS
+-Elemento;
+-Classe;
+-ID;
+-Agrupamento;
+-Descendente.
+*/
+/* PSEUDO-CLASSES */
+li:hover{ /* Quando passa o mouse em cima. */
+    color: #900;
+    font-size: 25px;
+}
+ul li:first-child{ /* Primeiro filho */
+    font-size: 30px;
+}
+ul li:last-child{ /* Último filho */
+    background: #990;
+}
+ul li:nth-child(2){ /* Filho específico. Também posso declarar ODD ou EVEN (ímpar ou par). */
+    background: #099;
+}
+input{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+}
+input:focus{ /* Quando elemento entra em foco. */
+    border-color: #900;
+}
+:focus{
+    outline: 0;
+}
+
+/* PSEUDO-ELEMENTO */
+li::after{
+    content: " teste";
+}
+li::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(../Imagens/Logos/favicon.png);
+}
+/* SELETORES AVANÇADOS */
+ul a{color: #990;} /* Seletor de elemento filho */
+ul > a{color: #990;} /* Com a seta somente para o filho direto */
+input[type="text"]{background: #900;} /* Seletor de atributo. */
+p ~ p{color: #909}
+
+/* body{
+    overflow: hidden;
+} */
+.box1{
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    /* OVERFLOW é o nome dado a área além dos limites do BOX, e podemos manipular seu compirtamento através da propriedade OVERFLOW. Podemos atribuir SCROLL ou HIDDEN principalmente. */
+    overflow: scroll;
+
+    /* Cursor manipula o ponteiro do mouse quando o usuário passsa o mouse sobre este elemento. */
+    cursor: pointer;
+}
+.box1:hover{
+    background: #099;
+}
+
+.box2{
+    width: 400px;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

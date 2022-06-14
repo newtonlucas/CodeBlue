@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body{
+    background-image: url(../Imagens/Fotos/imagem4.jpg);
+    background-repeat: no-repeat;
+    background-position: 200px 200px;
+    background-attachment: fixed;
+}
+
+/* NÃO ESQUEÇA: Todo eemento de bloco (BLOCK) jé tem width:100% por padrão. */
+.box1{
+    width: 200px;   /* Largura do BOX. Se usar uma unidade de madida (PX), podemos chamar  de largura fixa. Se eu usar uma unidade de medida relativa (%), podemos cha,ar de largura fluída. */
+    height: 300px;  /* Altura do BOX. Em muitos casos não é necessário definir, deixando com que o próprio conteúdo aumente a altura do BOX. */
+
+    /* 
+    Existem variações de Width e Height:
+    -min-width:...;
+    -min-height:...;
+    -max-width:...;
+    -max-height:...;
+    */
+
+    /* 
+    MARGIN:
+    Margem é o espaçamento externo do box. Geralemnte usado para empurar outros elementos.
+
+    Margin declarada para cada lado
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+
+    Margin com 4 eixos. Segue o sentido dos ponteiros do relógio (TOP | RIGHT | BOTTOM | LEFT):
+    margin: 20px 10px 35px 30px;
+
+    Margin com 3 eixos (TOP | RIGHT e LEFT | BOTTOM):
+    margin: 20px 30px 35px;
+
+    Margin com 2 eixos (TOP e BOTTOM | RIGHT e LEFT):
+    margin: 20px 40px;
+
+    Margin com 1 eixo (Os quatro lados recebem o mesmo espaçamento externo.
+    margin: 30px;
+
+*/
+    margin: 0 auto; /* Centraliza um elemento de bloco que tenha largura fixa. */
+    
+    /* 
+    PADDING:
+    Padding é o espaçamento interno do box. Todas as variações que aprendemos para margin valem também para padding.
+     */
+    padding: 10px;
+
+    /* 
+    Border
+    Cria uma borda no BOX. Pode ser left, right, botton e/ou top. Tem 3 valores: tamanho, estilo e cor. Também aumenta o tamnho do BOX.
+     */
+    border: 10px solid #090;
+    
+    /* 
+    Não deixa o Padding aumentar o tamanho do Box 
+    box-sizing: border-box;
+    */
+    
+    
+    /* 
+    BAKGROUND:
+    Muda o fundo do BOX.
+    
+    background-color: #099;
+    background-image: url(../Imagens/Logos/favicon.png);
+    background-repeat: no-repeat;
+    background-position: 100px 150px; (pode ser por palavra também: center, right, botton, etc.)
+
+    Pode ser agupado em qualquer ordem.
+    */
+    background: url(../Imagens/Logos/favicon.png) no-repeat center #099;
+}
+
+.box2{
+    width: 300px;
+    height: 400px;
+    background: #090;
+}
+
+.parallax{
+    height: 300px;
+    background: url(../Imagens/Fotos/imagem9.jpg) no-repeat top left fixed transparent;
+}

@@ -1,0 +1,35 @@
+/* ASSIM QUE FAZ COMENTÁRIOS NO CSS */
+
+/* !IMPORTANT QUEBRA A HOERARQUIA CSS. SÓ USE EM CASOS E EMERGÊNCIA. */
+
+/* 
+    SINTAXE CSS:
+    SELETOR{
+        PROPRIEDADE:VALOR;
+    }
+*/
+
+/*
+    MINI AULA DE COES
+    NO CSS EXISTEM 4 FORMAS DE ESCOLHER A COR DE ALGO.
+
+*/
+h1{
+    color: #033000 !important; /* COR DA LETRA */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* MUDA O TIPO DE LETRA */
+    font-size: 20px; /* TAMANHO DA LETRA */
+    /* NO CSS SEMPRE QUE HOUVER UM VALOR NUMÉRICO EU TENHO QUE DEFINIR A UNIDADE DE MEDIDA */
+    font-weight: normal; /* Negrito. Normal tira. */
+    font-style: italic; /* Itálico. Pouco usado. */
+    font-variant: small-caps; /* Versalate. Super pouco usado */
+}
+
+h2{
+    font: normal italic 30px/50px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Regras para agupamento das propriedades "FONT". Regras para que o agrupemento de font funcioe: 1- Tem que estar na ordem certe [estilos] [tamanho] [fonte]. 2- Tamanho da letra e tipo da letra é obrigatório. Se eu quiser posso agrupar LINE-HEIGHT junto com o tamanho de ketra, separado por barra. */
+    /* line-heigth:50px; Espaçamento entre linhas*/
+    text-align: center; /* Alinhamento de texto */
+    text-decoration: underline; /* Sublinhado outaxado */
+    text-transform: capitalize; /* Muda a caixa de texto. */
+    text-indent: 50px; /* Espaçamento de parágrafo. Pouco usado */
+    letter-spacing: 10px; /* Espaçamento entre letras */
+}

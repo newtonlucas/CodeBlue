@@ -1,0 +1,162 @@
+/* RESET */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+ul,
+li,
+main,
+nav,
+aside,
+section,
+article,
+figure,
+footer,
+header,
+video{
+    border:0;
+    font-size:100%;
+    font:inherit;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ul,
+li{list-style:none;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+
+/* HEADER */
+header{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 200px;
+}
+
+/* MENU */
+header ul{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+header li{
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+header li a:hover{
+    color: 	#B8860B;
+}
+
+/* ASIDE */
+aside{
+    position: relative;
+}
+.blog{
+    position: absolute;
+    left: 50%;
+    bottom: 40%; /* Texto um pouco abaixo para facilitar a visualização */
+    transform: translate(-50%,-50%);
+}
+h1{
+    font: bold 50px Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+aside img{
+    width:100%;
+}
+
+/* SECTION */
+section{
+    position: relative;
+    top: -55px;
+    background-color: #fff;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.artigos{
+    margin-top: 95px;
+    margin-left: 40px;
+    width: 70%;
+}
+.artigos > article{
+    display: flex;
+    padding-bottom: 20px;
+}
+.imagem{
+    width: 38%;
+    text-align: center;
+}
+.artigos > article > article{
+    width: 55%;
+    margin-left: 30px;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #9400D3;
+}
+.artigo-2 h2{
+    color: #0ff;
+}
+h3{
+    margin-top:15px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+p{
+    margin-top: 15px;
+}
+
+/* MENU LATERAL */
+.barra{
+    width: 17%;
+    margin-top: 140px;
+    margin-right: 40px;
+    }
+h4{
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 80px;
+}
+.barra li{
+    margin-left: 12px;
+    line-height: 30px;
+}
+.barra a{
+    color: #4682B4;
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid #999;
+    text-align: center;
+}
+footer p{
+    margin: 17px;
+}

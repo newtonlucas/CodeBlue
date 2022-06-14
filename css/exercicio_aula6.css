@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+lo{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.apostila{
+    list-style: inside url(../Imagens/icones/adobe-reader.png);
+}
+.guia{
+    list-style: inside url(../Imagens/icones/Dog.png);
+}
+.exercicio{
+    list-style: inside url(../Imagens/icones/exercicio.png);
+}
+.arquivos{
+    list-style: inside url(../Imagens/icones/google_drive.png);
+}
+.meet{
+    list-style: inside url(../Imagens/icones/meet.png);
+}
+.discord{
+    list-style: inside url(../Imagens/icones/discord.png);
+}
+.youtube{
+    list-style: inside url(../Imagens/icones/YouTube.png);
+}
+.codeblue{
+    list-style: inside url(../Imagens/icones/codeblue.png);
+}

@@ -1,0 +1,92 @@
+/* RESET Diego Perly */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+ul,
+li,
+main,
+nav,
+aside,
+section,
+article,
+figure,
+footer,
+header,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ul,
+li{list-style:none;}
+strong{font-family:Arial, Helvetica, sans-serif;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+
+/* FIGURA sem limitação */
+body > figure{
+    width: 100%;
+    margin-bottom: 125px;
+    background: url(../imagens/familia-na-praia.jpg) no-repeat top;
+}
+
+/* CONTEÚDO */
+main{
+    width: 1150px;
+    margin: 0 auto;
+}
+aside{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+}
+aside figure{
+}
+article{
+    width: 600px;
+    margin: 30px 60px;
+}
+h1{
+    font-size: 50px;
+    color: #090;
+}
+p{
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 25px;
+}
+section{
+    margin: 200px 450px 50px 0;
+}
+h2{
+    font-size: 40px;
+    color: #090;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width:1024px) {
+    
+}

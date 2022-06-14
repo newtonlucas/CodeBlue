@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos Visuais de Site</title>
+
+    <!-- FAVICOM: 16 X 16 pixels -->
+    <link rel="icon" href="Imagens/Logos/favicon.png">
+</head>
+<body>
+    <!-- TAG VIDEO -->
+    <video src="video.mp4" controls loop></video>
+    <br>
+
+    <!-- TAG AUDIO -->
+    <audio src="audio.mp3" autoplay controls loop preload></audio>
+    <br>
+
+    <!-- IFRAME -->
+    <!-- Iframe hora certa -->
+    
+    <iframe src="https://relogio.ntp.br/horacerta/glight.php" frameborder="0" scrolling="no" height="247" width="365" marginheight="0px" allowtransparency="true"></iframe>
+    <br>
+    
+    <!-- Qualqer site -->
+    <iframe src="https://www.codeblue.com.br" width="500" height="300"></iframe>
+    <br>
+    <!-- YOUTUBE -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tD5C1-jBqB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <!-- GOOGLE MAPS -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2329621135805!2d-46.67764368554405!3d-23.524122066102045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef80115b7666f%3A0xd4e82aa81bd78c05!2sIgreja%20Batista%20%C3%81gua%20Branca!5e0!3m2!1spt-BR!2sbr!4v1652746848241!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br>
+    <!-- TABELAS - TABLESS - 
+        Usadas até hoje para dados tabulares, mas não para estruturação de layout. Para estruturação de layout usamos TABLESS - Técnica de CSS para estruturação de layouts sem tabelas. -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th scope="col">Carro</th><th scope="col">Ano</th><th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gol</td><td>1997</td><td>R$ 8.000,00</td>
+            </tr>
+            <tr>
+                <td>Celta</td><td>2003</td><td>R$ 11.000,00</td>
+            </tr>
+            <tr>
+                <td>Uno</td><td>2010</td><td>R$ 13.000,00</td>
+            </tr>
+            <tr>
+                <td>Fusca</td><td>1968</td><td>R$ 5.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total:</td><td>R$ 37.000,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <!-- 
+        Boas práticas sobre imagens:
+    - ACESSIBILIDADE - SEMPRE DEVEMOS DEFINIR O ALT DAS IMAGENS COM UM VALOR COM UMA DESCRIÇÃO BREVE DO QUE ESTÁ ACONTECENDO NA IMAGEM, OU DA INFORMAÇÃO QUE ELA CONTEM, PARA DEFICIENTES VISUAIS.
+    - SEO - Sempre defiinr o ALT das imagens também ajuda muito no SEO.
+    - PERFORMANCE - Imagens pesam muito, semre devemos compactar antes de inserir no site. Não devemos escalonar imagens via código.  -->
+    <figure>
+        <img src="Imagens/Fotos/imagem8.jpg" alt="Duas mulheres profissionais explicam em um quadro um conteúdo para um homem" width="1313" height="876">
+        <figcaption>Foto: João da Silva</figcaption>
+        <picture></picture>
+    </figure>
+
+    
+</body>
+</html>

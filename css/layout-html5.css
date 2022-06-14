@@ -1,0 +1,138 @@
+/* RESET Diego Perly */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+ul,
+li,
+main,
+nav,
+aside,
+section,
+article,
+figure,
+footer,
+header,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ul,
+li{list-style:none;}
+strong{font-family:Arial, Helvetica, sans-serif;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+.header{
+    text-align: center;
+}
+
+/* INÍCIO DO MEU CSS */
+
+header{
+    background: #900;
+}
+h1,
+h2{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+nav{
+    background: #ccc;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+nav ul{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    justify-content: center;
+    margin: 20px 0 20px;
+}
+nav li:nth-of-type(2),
+nav li:nth-of-type(4){
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+nav a{
+    padding: 19px 90px;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+aside{
+    width: 360px;
+    margin: 5px;
+    border-right: 1px solid #999;
+}
+h4{
+    font: normal 18px Arial, Helvetica, sans-serif;
+}
+aside li{
+    text-decoration: underline;
+    padding: 10px;
+}
+aside a{
+    color: #999;
+}
+
+section{
+    width: 840px;
+    margin: 5px;
+}
+h3{
+    font: bold 18px Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #000;
+}
+
+article p{
+    padding: 10px;
+}
+.leia{
+    text-align: right;
+    text-decoration: underline;
+}
+.leia a{
+    color: #900;
+}
+footer{
+    background: #ccc;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+footer p{
+    margin: 17px;
+}

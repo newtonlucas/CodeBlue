@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* 
+TÉCNICAS DE TABLELESS:
+-Position;
+-Float;
+-Display;
+-Flex;
+-Grid.
+*/
+
+/* 
+POSITION: Quando eu quero que um elemento fique por cima de outro.
+Valores possíveis:
+-Static (default);
+-Relative*; Mantem o elemento no fluxo do documento. Continua ocupando o espaço original no documento, mesmo após ser deslocado.
+-Absolute*; 
+-Fixed*;
+-Sticky*.
+
+*Libera o uso das popriedades:
+-TOP;
+-LEFT;
+-RIGHT;
+-BOTTOM;
+-Z-INDEX.
+*/
+
+.p-box{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #900;
+    width: 400px;
+    height: 400px;
+}
+.p-box1{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    width: 150px;
+    height: 150px;
+    background: #090;
+    z-index: 1;
+}
+.p-box2{
+    position: absolute;
+    right: -50px;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
+    background: #009;
+}
+.fone{
+    background: #009;
+    padding: 10px;
+    color: #fff;
+    width: 180px;
+    font: 16px Arial, Helvetica, sans-serif;
+    line-height: 1;
+    position: fixed;
+    top: 50%;
+    right: -145px;
+    z-index: 50;
+}
+.fone:hover{
+    right: 0;
+}
+
+/* 
+FLOAT: Técnica de Tableless para posicionar uma caixa ao lado da outra.
+Float tem 3 valores possíveis:
+-Left;
+-Right;
+-None.
+ */
+.f-box{
+    background: #990;
+    width: 500px;
+    overflow: auto;
+}
+.f-box-1{
+    background: #099;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+.f-box-2{
+    background: #909;
+    width: 50px;
+    height: 100px;
+    float: left;
+}
+
+/* BUG que o FLOAT causa:
+    Usar FLOAT nos elementos filhos, faz com que o elemento pai perca sua altura natural. Para corrigir existem duas formas:
+    -CLEAR (left | rigth | both);
+    -OVERFOW.
+
+.fix{
+    clear: both;
+}
+*/
