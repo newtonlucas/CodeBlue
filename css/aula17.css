@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "light";
+    src: url(../Fonts/Poppins-Light.woff);
+}
+@font-face{
+    font-family: "regular";
+    src: url(../Fonts/Poppins-Regular.woff);
+}
+@font-face {
+    font-family: "semibold";
+    src: url(../Fonts/Poppins-SemiBold.woff);
+}
+@font-face {
+    font-family: "bold";
+    src: url(../Fonts/Poppins-Bold.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+body{
+    font-family: "regular";
+}
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 20px; /* 50% para fazer um círculo */
+    box-shadow: -10px 10px 3px #333, 10px -10px 10px #900;
+    /* Sombra.
+    4 Propriedades: desocamento vertical, deslocamento horizontal, desfoque e cor. É possível inserir mais sombras no mesmo bloco, basta colocar virgula, seguida da proxima sombra.
+    É possível declarar um quinto valor para sombra interna, basta usar a palavra INSET. */
+    background: #009; /* Fall Back */
+    background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+}
+h1{
+    font: 100px "semibold";
+    color: #900;
+    text-shadow: -5px 5px 3px #333;
+    width: fit-content;
+    /* transform: rotate(50deg); */
+    transform: skew(-45deg);
+}
+h1:hover{
+    transform: rotate(180deg);
+}
+img{
+    filter: grayscale(100%);
+    /* filter: hue-rotate(127deg); */
+    /* transform: scale(50%, 150%); */
+    display: block;
+}
+.box2{
+    position: relative;
+    width: fit-content;
+}
+.borda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+    border: 3px solid #fff;
+    transition: .3s ease all;
+}
+.box2:hover .borda{
+    transform: scale(75%);
+    transition: .3s ease all;
+}
+img:hover{
+    filter: grayscale(0);
+}
