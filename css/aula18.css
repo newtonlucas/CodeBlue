@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* 
+Duas formas de fazer animações:
+    - Transition
+    - Keyframes
+*/
+.box{
+    width: 200px;
+    height: 50px;
+    background: #700;
+    margin: 20px;
+    border-radius: 10px;
+    transition: .5s ease all; /* Os valores são: tempo da animação, estilo da animação e o que eu quero animar. */
+}
+
+.box:hover{
+    background: #070;
+    border-radius: 0;
+    transform: rotate(180deg);
+    width: 250px;
+    height: 100px;
+}
+
+@keyframes anima{
+    /* from{
+        background: #007;
+    }
+    to{
+        background: #700;
+    } */
+
+    0%{background: #007;}
+    25%{background: #ccc;}
+    50%{background: #fff;}
+    75%{background: #070;}
+    100%{background: #700;}
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background: #007;
+    animation: anima 5s infinite;
+}
+.box2 p{
+    font-size: 0;
+    transition: 1s ease all;
+}
+.box2:hover p{
+    font-size: 20px;
+}
+.cards{
+    display: flex;
+    padding-left: 150px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 5px #000;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    margin-left: -150px;
+    transition: .5s ease all;
+}
+.card:hover + .card{
+    margin-left: -10px;
+}
+
+@keyframes banner-img {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.banner{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner img{
+    animation: 3s banner-img;
+}
+@keyframes titulo-banner{
+    from{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.banner h3{
+    font: bold 40px Arial, Helvetica, sans-serif;
+    color: #009;
+    text-transform: uppercase;
+    animation: 5s titulo-banner;
+}
+@keyframes texto-banner{
+    from{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.texto-banner{
+    font: 18px Arial, Helvetica, sans-serif;
+    width: 250px;
+    margin: 20px 0;
+    animation: 6s texto-banner;
+}
+@keyframes banner-botao{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.botao{
+    animation: 7s banner-botao;
+}
+.botao a{
+    text-decoration: none;
+    color: #fff;
+    background: #070;
+    display: block;
+    padding: 10px 30px;
+    width: fit-content;
+    font: 20px Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #333;
+}
+.conteudo-banner{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
