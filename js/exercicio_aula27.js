@@ -8,6 +8,11 @@ $(function(){
         cssEase: 'linear',
         adaptiveHeight: true
     });
+
+    $(".carrossel").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
 });
 
 

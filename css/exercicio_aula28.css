@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font: 400 14px 'Work Sans', Arial, Helvetica, sans-serif;
+}
+main{
+    width: 1100px;
+    margin: auto;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.colunas{
+    display: flex;
+}
+
+/* MENU */
+h1{
+    font: 700 40px 'Work Sans', Arial, Helvetica, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin: 85px 0 40px;
+}
+h1 span{
+    font: 700 40px 'Work Sans', Arial, Helvetica, sans-serif;
+    color: #405CA3;
+    text-transform: uppercase;
+}
+h1 p{
+    margin-top: 20px;
+}
+.menu i{
+    font-size: 25px;
+    text-decoration: none;
+}
+.menu li{
+    color: #fff;
+    width: 235px;
+    margin-right: 120px;
+    padding: 30px 0 30px 15px;
+    word-spacing: 5px;
+    display: flex;
+}
+.menu a{
+    margin: 5px 0 0 15px;
+}
+.celular{
+    background: #43527A;
+}
+.telefone{
+    background: #405CA3;
+}
+.email{
+    background: #23418A;
+}
+
+/* FORMULÁRIO */
+.form-contato legend{
+    width: 415px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+.form-contato li{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.form-contato label{
+    color: #405CA3;
+    font: 700 14px 'Work Sans', Arial, Helvetica, sans-serif;
+    margin: 20px 0 5px;
+}
+.form-contato input{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 2px;
+}
+.form-contato .mensagem input{
+    height: 100px;
+}
+.form-contato .submit input{
+    width: 170px;
+    padding: 15px;
+    margin: 20px 0 50px;
+    background: #405CA3;
+    color: #fff;
+}
+
+
+.whats{
+    background: #62D20A;
+    padding: 10px;
+    color: #fff;
+    width: 170px;
+    line-height: 1;
+    position: fixed;
+    top: 50%;
+    right: -148px;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+}
+.whats:hover{
+    right: 0;
+}
+.whats i{
+    font-size: 27px;
+}
+.whats a{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.whats a:hover{
+    color: #cccfff;
+}
+label.error{
+    background: transparent;
+    border: 1px dashed rgba(47, 111, 194, 0.404);
+    color: rgba(0,0,0,0.7);
+    /* padding: 5px;
+    margin: 0 10px; */
+    font: 12px 'Corrier New', 'Corrier', monospace;
+}
