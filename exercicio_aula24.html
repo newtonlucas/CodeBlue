@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/aula15.css">
+    <title>Exercício Aula 24 - JQuery</title>
+    <link rel="stylesheet" href="css/exercicio_aula24.css">
 </head>
 <body>
     <!-- TOPO -->
@@ -22,6 +22,9 @@
         </figure>
 
         <!-- ARTIGOS -->
+        <section class="leia">
+            <p>Clique para ler os artigos!</p>
+        </section>
         <section class="container">
             <section class="artigo artigo1">
                 <figure>
@@ -35,8 +38,11 @@
             <section class="artigo artigo2">
                 <article>
                     <h2>Lorem Ipsum is simply dummy text</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <strong>since the 1500s.</strong></p>
-                    <p>Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <span class="cont">...</span>
+                        
+                        <span class="continuar">
+                        has been the industry's standard dummy text ever <strong>since the 1500s.</strong><br>
+                    Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span></p>
                 </article>
                 <figure>
                     <img src="Imagens/Fotos/artigo2.png" alt="Menina olando para a câmera">
@@ -50,21 +56,21 @@
             <section>
                 <article>
                     <figure>
-                        <img src="Imagens/Fotos/conheca-1.png" alt="">
+                        <img src="Imagens/Fotos/conheca-1.png" alt="" class="conheca1">
                     </figure>
                     <p><strong>Lorem Ipsum is simply</strong> dummy text</p>
                     <p><a href="#">Descubra</a></p>
                 </article>
                 <article>
                     <figure>
-                        <img src="Imagens/Fotos/conheca-2.png" alt="">
+                        <img src="Imagens/Fotos/conheca-2.png" alt="" class="conheca2">
                     </figure>
                     <p><strong>Lorem Ipsum is simply</strong> dummy text</p>
                     <p><a href="#">Descubra</a></p>
                 </article>
                 <article>
                     <figure>
-                        <img src="Imagens/Fotos/conheca-3.png" alt="">
+                        <img src="Imagens/Fotos/conheca-3.png" alt="" class="conheca3">
                     </figure>
                     <p><strong>Lorem Ipsum is simply</strong> dummy text</p>
                     <p><a href="#">Descubra</a></p>
@@ -272,5 +278,8 @@
         </footer>
         <br><br>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/exercicio_aula24.js"></script>
 </body>
 </html>
