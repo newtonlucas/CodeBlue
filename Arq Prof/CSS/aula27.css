@@ -1,4 +1,40 @@
-/* Slider */
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+.banner-principal img{
+    width:1200px;
+    height:600px;
+}
+
+.carrossel img{
+    width:200px;
+    height:200px;
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        max-width:100%;
+    }
+    .banner-principal img{
+        width:100%;
+        height:fit-content;
+    }
+    .carrossel img{
+        width:150px;
+        height:150px;
+    }
+}
+
+/* PLUGINS */
+/* SLICK */
 .slick-slider{
     position: relative;
     display: block;
