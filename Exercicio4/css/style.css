@@ -1,0 +1,255 @@
+/* RESET */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    display: block;
+}
+
+@font-face{
+    font-family: "SFPro";
+    src: url(../Fonts/SF-Pro-Text-Regular.otf);
+}
+
+/* CONTAINER */
+.container{
+    padding: 16px;
+}
+.fa-reply{
+    margin-top: 40px;
+}
+
+/* BACKGROUD */
+.background{
+    position: relative;
+    width: 100%;
+}
+
+/* COMPONENT */
+.logout{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 206px;
+    justify-content:space-between;
+}
+.logout figure{
+    display: flex;
+}
+.unioncolor{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+}
+.unionblack{
+    position: relative;
+    width: 38px;
+    height: 38px;
+}
+
+/* PERFIL */
+.perfil{
+    text-align: center;
+    padding-top: 16px;
+}
+.perfil img{
+    width: 128px;
+    margin: auto;
+    padding: 16px 0;
+}
+
+/* TÍTULOS */
+h1{
+    font: 36px 'Comfortaa', cursive;
+    margin: 32px 0;
+    letter-spacing: -1px;
+}
+h2{
+    font: 900 13px 'Roboto', sans-serif;
+    margin: 32px 0;
+    text-transform: uppercase;
+}
+h3{
+    font: 48px 'Comfortaa', cursive;
+    letter-spacing: -1.5px;
+}
+h4{
+    font: 700 13px 'Roboto', sans-serif;
+}
+p{
+    font: 400 13px 'Roboto', sans-serif;
+    line-height: 18px;
+    display: block;
+}
+p a{
+    text-decoration: underline;
+    color: #000;
+}
+
+/* STORIES */
+.stories-box{
+    overflow-x: scroll;
+    margin-bottom: 48px;
+}
+.stories{
+    display: flex;
+    gap: 16px;
+}   
+.stories section{
+    min-width: 100%;
+}
+.story-img{
+    margin-bottom: 16px;
+}
+.legenda{
+    display: flex;
+    gap: 8px;
+}
+.legendaAbsolute{
+    position: absolute;
+    top: 99%;
+}
+.legenda a{
+    font: 400 11px 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+.legendaPhoto{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    color: #fff;
+    width: 90%;
+    justify-content: space-between;
+    gap: 16px;
+}
+.legendaPhoto a{
+    color: #fff;
+}
+.legendaPhoto i{
+    color: #fff;
+}
+
+/* POSTS */
+.posts{
+    display: flex;
+    gap: 9px;
+}
+.posts article{
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+}
+
+/* VER MAIS */
+.ver-mais a{
+    display: block;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 19px 0 18px;
+    margin: 32px 0 80px;
+    font: 900 13px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.ver-light{
+    width: 100%;
+}
+.posts .ver-light a{
+    margin: 8px 0;
+}
+.ver-black{
+    width: 100%;
+}
+.posts .ver-black a{
+    color: #fff;
+    background: #000;
+    margin: 8px 0;
+}
+
+/* PREENCHA */
+.preencha{
+    display: block;
+    border: 2px solid #000;
+    padding: 19px 0 18px;
+    color: #000;
+    text-decoration: none;
+    margin: 16px 0;
+}
+.preencha p{
+    font: 400 15px 'Roboto', sans-serif;
+    padding-left: 17px;
+}
+.search p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* CHATS */
+.topo{
+    display: flex;
+    justify-content: center;
+}
+.topo img{
+    margin: 11px;
+    position: fixed;
+    left: 0;
+}
+.chats>.legenda{
+    padding: 16px 0 19px;
+}
+.chats p{
+    margin-top: 6px;
+}
+.chats h3{
+    font: 700 17px 'SFPro', sans-serif;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    margin: 11px;
+}
+.chatsInd{
+    display: flex;
+    margin-top: 24px;
+}
+.remet{
+    margin-left: 16px;
+}
+.dest{
+    margin-right: 16px;
+}
+.dest,.remet{
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0px 6px 6px 6px;
+}
+.chatsInd p{
+    margin: 16px;
+}
+.borda{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 9px 0;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}

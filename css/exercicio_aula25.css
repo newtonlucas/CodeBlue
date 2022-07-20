@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* Menu hamburguer */
+
+.line1, .line2, .line3{
+    width: 45px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: black;
+}
+.show .line1{
+    transform: rotate(-45deg);
+}
+.show .line2{
+    display: none;
+}
+.show .line3{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Modal */
+.janela-modal{
+    width: 250px;
+    margin: 20px;
+}
+
+.conteudo-modal{
+    display: none;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+
+/* ACORDION */
+.menu{
+    width: 200px;
+}
+.menu a{
+    display: block;
+    padding: 5px 15px;
+    color: #333;
+    text-decoration: none;
+}
+.submenu{
+    display: none;
+    margin: 0 0 5px 20px;
+}
+.menu p{
+    position: relative;
+    padding: 10px;
+    border-top: 0.5px solid #333;
+}
+.menu p::after{
+    content: "";
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transition: .5s ease all;
+}
+.menu p.open::after{
+    transform: rotate(-135deg);
+}
+main{
+    max-width: 100%;
+    background-color: rgb(207, 207, 207);
+    z-index: 1;
+}
