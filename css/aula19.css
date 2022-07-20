@@ -1,0 +1,79 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TOPO */
+header{
+    height: 200px;
+    background: #ccc;
+}
+
+/* MENU */
+nav{
+    background: #300;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font: 18px/1 Arial, Helvetica, sans-serif; /* Usar o / depois do tamanho da fonte */
+    display: block; /* Se não colocar, MARGIN e PADIN não funcionam direito. */
+    padding: 16px 20px;
+    transition: .3s ease all;
+    min-width: 100px;
+}
+nav a:hover,
+nav li:hover{ /* Item adicionado para deicar o menu selecionado ao navegar pelo sub-menu. */
+    background: #900;
+}
+nav li{
+    position: relative;
+    text-align: center;
+}
+nav li ul{
+    position: absolute;
+    background: #300;
+    width: 100%;
+    box-shadow: 0 2px 3px #ccc;
+    left: 0;
+    top: 100%; /* Evitar deslocamento das margens do submenu. */
+    z-index: 9; /* Manter sobre demais itens */
+    display: none;
+}
+nav li:hover .segundo{
+    display: block; /* Mostra o sub-menu ao passar o mouse */
+}
+.terceiro{
+    display: none;
+    left: 100%;
+    top: 0;
+}
+nav ul ul li:hover .terceiro{
+    display: block;
+}
+.icon-home{
+    display: inline-block;
+    vertical-align:middle;
+    width: 35px;
+    height: 35px;
+    background: url(../Imagens/icones/sprite.jpg) no-repeat -179px -52 transparent;
+}
+
+/* CONTEÚDO DA HOME */
+.banner{
+    height: 400px;
+    background: #333;
+}
